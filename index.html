@@ -1,66 +1,337 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Jiwoo Song</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jiwoo Song | Research</title>
+  <meta name="description" content="Jiwoo Song — research in dynamical systems, Koopman/operator learning, and kernel methods." />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: nicer typography (safe to keep) -->
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 
-<body class="bg-white text-gray-900">
-  <div class="max-w-3xl mx-auto px-6 py-16">
-
-    <h1 class="text-3xl font-semibold">Jiwoo Song</h1>
-    <p class="text-gray-600 mt-2">
-      PhD Student | Dynamical Systems | Koopman Operator Theory | Machine Learning
-    </p>
-
-    <div class="mt-4 space-x-4 text-sm">
-      <a class="underline" href="https://github.com/jws625">GitHub</a>
-      <a class="underline" href="#">Google Scholar</a>
-      <a class="underline" href="#">CV</a>
+<body class="bg-white text-slate-900">
+  <!-- Top bar -->
+  <div class="sticky top-0 z-50 bg-white/85 backdrop-blur border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#top" class="font-semibold tracking-tight">Jiwoo Song</a>
+      <nav class="hidden sm:flex gap-5 text-sm text-slate-600">
+        <a class="hover:text-slate-900" href="#about">About</a>
+        <a class="hover:text-slate-900" href="#research">Research</a>
+        <a class="hover:text-slate-900" href="#publications">Publications</a>
+        <a class="hover:text-slate-900" href="#teaching">Teaching</a>
+        <a class="hover:text-slate-900" href="#contact">Contact</a>
+      </nav>
+      <a href="#contact"
+         class="text-sm rounded-full px-4 py-2 border border-slate-300 hover:border-slate-400 hover:bg-slate-50">
+        Get in touch
+      </a>
     </div>
-
-    <hr class="my-10">
-
-    <h2 class="text-xl font-semibold">About</h2>
-    <p class="mt-3 text-gray-700 leading-7">
-      Brief 3–4 sentence description of your research focus.
-      What problems you study, what methods you develop,
-      and what applications you care about.
-    </p>
-
-    <hr class="my-10">
-
-    <h2 class="text-xl font-semibold">Research</h2>
-
-    <div class="mt-5 space-y-6">
-
-      <div class="border rounded-xl p-5">
-        <h3 class="font-semibold">Project Title</h3>
-        <p class="text-gray-700 mt-2">
-          One or two sentence description of the contribution.
-        </p>
-      </div>
-
-      <div class="border rounded-xl p-5">
-        <h3 class="font-semibold">Another Project</h3>
-        <p class="text-gray-700 mt-2">
-          Short description.
-        </p>
-      </div>
-
-    </div>
-
-    <hr class="my-10">
-
-    <h2 class="text-xl font-semibold">Publications</h2>
-    <ul class="mt-4 space-y-3 list-disc pl-5 text-gray-700">
-      <li>
-        Your Name, Coauthor. <em>Paper title</em>. Venue, 2026.
-      </li>
-    </ul>
-
   </div>
+
+  <main id="top" class="max-w-5xl mx-auto px-6">
+    <!-- Hero -->
+    <section class="pt-14 pb-12">
+      <div class="grid md:grid-cols-[1.4fr_0.6fr] gap-10 items-start">
+        <div>
+          <p class="text-sm text-slate-500">Research • Dynamical Systems • Machine Learning</p>
+          <h1 class="mt-3 text-4xl sm:text-5xl font-semibold tracking-tight">
+            Jiwoo Song
+          </h1>
+          <p class="mt-4 text-lg text-slate-700 leading-8">
+            I work on <span class="font-medium">operator-theoretic learning</span> for nonlinear dynamics—especially
+            <span class="font-medium">Koopman spectral analysis</span>, <span class="font-medium">kernel methods</span>,
+            and <span class="font-medium">numerical algorithms</span> that stay stable at scale.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-3 text-sm">
+            <a class="rounded-full px-4 py-2 bg-slate-900 text-white hover:bg-slate-800"
+               href="#research">See research</a>
+
+            <!-- Replace # links when you have them -->
+            <a class="rounded-full px-4 py-2 border border-slate-300 hover:bg-slate-50"
+               href="https://github.com/jws625" target="_blank" rel="noreferrer">GitHub</a>
+
+            <a class="rounded-full px-4 py-2 border border-slate-300 hover:bg-slate-50"
+               href="#" target="_blank" rel="noreferrer">Google Scholar</a>
+
+            <a class="rounded-full px-4 py-2 border border-slate-300 hover:bg-slate-50"
+               href="CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a>
+          </div>
+
+          <div class="mt-8 grid sm:grid-cols-3 gap-4">
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <p class="text-sm text-slate-500">Focus</p>
+              <p class="mt-2 font-medium">Koopman / Spectral Methods</p>
+              <p class="mt-1 text-sm text-slate-600 leading-6">
+                Eigenvalues, modes, resolvent & pseudospectra for nonlinear systems.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <p class="text-sm text-slate-500">Tools</p>
+              <p class="mt-2 font-medium">Kernels & Regression</p>
+              <p class="mt-1 text-sm text-slate-600 leading-6">
+                Kernel ridge regression, diffusion maps, scalable linear algebra.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <p class="text-sm text-slate-500">Goal</p>
+              <p class="mt-2 font-medium">Stable, accurate computation</p>
+              <p class="mt-1 text-sm text-slate-600 leading-6">
+                Algorithms that remain robust in ill-conditioned, data-driven settings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile card -->
+        <aside class="rounded-2xl border border-slate-200 p-6">
+          <div class="flex items-center gap-4">
+            <!-- Optional: add a photo at /assets/profile.jpg and uncomment the img tag -->
+            <!-- <img src="assets/profile.jpg" alt="Profile photo" class="h-14 w-14 rounded-full object-cover border border-slate-200" /> -->
+            <div class="h-14 w-14 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center">
+              <span class="text-slate-500 font-semibold">JS</span>
+            </div>
+            <div>
+              <p class="font-semibold leading-5">Jiwoo Song</p>
+              <p class="text-sm text-slate-600">PhD Student (Dynamical Systems / ML)</p>
+            </div>
+          </div>
+
+          <dl class="mt-6 space-y-3 text-sm">
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-500">Affiliation</dt>
+              <dd class="text-slate-700 text-right">Penn State (update if needed)</dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-500">Interests</dt>
+              <dd class="text-slate-700 text-right">Koopman • Kernels • Numerics</dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-500">Location</dt>
+              <dd class="text-slate-700 text-right">USA</dd>
+            </div>
+          </dl>
+
+          <div class="mt-6 text-xs text-slate-500 leading-5">
+            Tip: add <span class="font-medium">CV.pdf</span> to the repo root so the “CV” button works immediately.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-12 border-t border-slate-200">
+      <h2 class="text-2xl font-semibold tracking-tight">About</h2>
+      <div class="mt-5 grid md:grid-cols-2 gap-8">
+        <p class="text-slate-700 leading-8">
+          My work sits at the intersection of <span class="font-medium">mathematical analysis</span> and
+          <span class="font-medium">numerical computation</span> for data-driven dynamical systems.
+          I’m especially interested in reliable spectral information—when it exists—and diagnostics
+          (like residuals and pseudospectra) when it doesn’t.
+        </p>
+        <p class="text-slate-700 leading-8">
+          Practically, I build and test algorithms for kernel-based operator approximation and
+          study failure modes: conditioning, regularization, finite-data effects, and stability of eigendecompositions.
+          I like methods that are both <span class="font-medium">principled</span> and <span class="font-medium">useful</span>.
+        </p>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-2">
+        <span class="px-3 py-1 text-xs rounded-full bg-slate-100 text-slate-700 border border-slate-200">Koopman operator</span>
+        <span class="px-3 py-1 text-xs rounded-full bg-slate-100 text-slate-700 border border-slate-200">Kernel methods</span>
+        <span class="px-3 py-1 text-xs rounded-full bg-slate-100 text-slate-700 border border-slate-200">Diffusion maps</span>
+        <span class="px-3 py-1 text-xs rounded-full bg-slate-100 text-slate-700 border border-slate-200">EDMD / KDMD</span>
+        <span class="px-3 py-1 text-xs rounded-full bg-slate-100 text-slate-700 border border-slate-200">Pseudospectra</span>
+        <span class="px-3 py-1 text-xs rounded-full bg-slate-100 text-slate-700 border border-slate-200">Stable linear algebra</span>
+        <span class="px-3 py-1 text-xs rounded-full bg-slate-100 text-slate-700 border border-slate-200">Scientific ML</span>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="py-12 border-t border-slate-200">
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <h2 class="text-2xl font-semibold tracking-tight">Research highlights</h2>
+        <p class="text-sm text-slate-500">Short, scannable summaries + links</p>
+      </div>
+
+      <div class="mt-8 grid lg:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:bg-slate-50 transition">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="font-semibold text-lg">Residual & pseudospectrum diagnostics for data-driven Koopman approximations</h3>
+            <span class="text-xs text-slate-500">Numerics</span>
+          </div>
+          <p class="mt-3 text-slate-700 leading-7">
+            I study how residuals and pseudospectra reveal spectral reliability when the operator is
+            non-normal or the spectrum is continuous. This gives a practical “trust meter” for eigenvalues
+            extracted from kernel/EDMD pipelines.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-3 text-sm">
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">Preprint (coming)</a>
+            <a class="underline text-slate-700 hover:text-slate-900" href="https://github.com/jws625" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:bg-slate-50 transition">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="font-semibold text-lg">Kernel ridge regression as a lens on Koopman regression & regularization</h3>
+            <span class="text-xs text-slate-500">Theory ↔ Practice</span>
+          </div>
+          <p class="mt-3 text-slate-700 leading-7">
+            I connect kernel regression views of operator learning with numerical regularization choices
+            (e.g., ridge/Tikhonov) and show how these choices impact stability, prediction, and spectral artifacts.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-3 text-sm">
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">Notes</a>
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">Slides</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:bg-slate-50 transition">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="font-semibold text-lg">Scalable GPU implementations for kernel operator pipelines</h3>
+            <span class="text-xs text-slate-500">Systems</span>
+          </div>
+          <p class="mt-3 text-slate-700 leading-7">
+            Building practical acceleration for large kernel matrices: careful precision choices,
+            multi-GPU parallelism, and stable factorizations/solves. The goal is speed without losing correctness.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-3 text-sm">
+            <a class="underline text-slate-700 hover:text-slate-900" href="https://github.com/jws625" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">Benchmarks</a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:bg-slate-50 transition">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="font-semibold text-lg">Koopman spectral analysis on canonical chaotic systems (e.g., Lorenz)</h3>
+            <span class="text-xs text-slate-500">Applications</span>
+          </div>
+          <p class="mt-3 text-slate-700 leading-7">
+            Using Lorenz and related systems as “stress tests” for spectral learning:
+            what is identifiable, what is not, and how to quantify error.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-3 text-sm">
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">Figures</a>
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">Writeup</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-10 rounded-2xl border border-slate-200 p-6 bg-slate-50">
+        <p class="text-slate-700 leading-7">
+          <span class="font-semibold">Open to collaboration:</span>
+          operator learning, spectral diagnostics, kernel methods for dynamics, and robust numerical workflows.
+          If you’re working on adjacent problems, I’d love to chat.
+        </p>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="py-12 border-t border-slate-200">
+      <h2 class="text-2xl font-semibold tracking-tight">Publications</h2>
+      <p class="mt-3 text-slate-600 leading-7">
+        Replace these placeholders with your real papers. Keep each entry to 1–2 lines + links.
+      </p>
+
+      <div class="mt-6 space-y-4">
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <p class="text-slate-800 leading-7">
+            <span class="font-semibold">Jiwoo Song</span>, Coauthors.
+            <em>Title of paper goes here.</em> Venue / arXiv, 2026.
+          </p>
+          <div class="mt-2 flex flex-wrap gap-3 text-sm">
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">PDF</a>
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">arXiv</a>
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <p class="text-slate-800 leading-7">
+            <span class="font-semibold">Jiwoo Song</span>, Coauthors.
+            <em>Another paper title.</em> Venue / arXiv, 2025.
+          </p>
+          <div class="mt-2 flex flex-wrap gap-3 text-sm">
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">PDF</a>
+            <a class="underline text-slate-700 hover:text-slate-900" href="#" target="_blank" rel="noreferrer">arXiv</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-6 text-sm text-slate-500">
+        Tip: You can also link a Scholar profile and skip manual formatting later.
+      </p>
+    </section>
+
+    <!-- Teaching -->
+    <section id="teaching" class="py-12 border-t border-slate-200">
+      <h2 class="text-2xl font-semibold tracking-tight">Teaching & mentoring</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <h3 class="font-semibold">Teaching</h3>
+          <ul class="mt-3 space-y-2 text-slate-700 leading-7 list-disc pl-5">
+            <li>TA / Instructor — Course Name (Year)</li>
+            <li>TA — Course Name (Year)</li>
+            <li>Guest lecture — Topic (Year)</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <h3 class="font-semibold">Mentoring</h3>
+          <ul class="mt-3 space-y-2 text-slate-700 leading-7 list-disc pl-5">
+            <li>Mentored student on project (topic)</li>
+            <li>Reading group / workshop participation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 border-t border-slate-200">
+      <h2 class="text-2xl font-semibold tracking-tight">Contact</h2>
+      <p class="mt-3 text-slate-700 leading-8">
+        The best way to reach me is email. I’m happy to talk about collaboration, research questions, or talks.
+      </p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <p class="text-sm text-slate-500">Email</p>
+          <p class="mt-2 font-medium">YOUR_EMAIL@domain.edu</p>
+          <p class="mt-2 text-sm text-slate-600">Replace this with your preferred address.</p>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <p class="text-sm text-slate-500">GitHub</p>
+          <a class="mt-2 inline-block font-medium underline text-slate-800 hover:text-slate-900"
+             href="https://github.com/jws625" target="_blank" rel="noreferrer">github.com/jws625</a>
+          <p class="mt-2 text-sm text-slate-600">Projects & code.</p>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <p class="text-sm text-slate-500">Scholar</p>
+          <a class="mt-2 inline-block font-medium underline text-slate-800 hover:text-slate-900"
+             href="#" target="_blank" rel="noreferrer">Google Scholar profile</a>
+          <p class="mt-2 text-sm text-slate-600">Publications & citations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-200 text-sm text-slate-500 flex flex-col sm:flex-row gap-2 sm:justify-between">
+      <p>© <span id="year"></span> Jiwoo Song</p>
+      <p>Built with GitHub Pages • Simple HTML</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
