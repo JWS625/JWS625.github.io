@@ -1,9 +1,22 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Modal Analysis | Research Notes</title>
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aeroelasticity | Research Notes</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- MathJax configuration -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+
+  <!-- MathJax library -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 
 <body class="bg-white text-slate-900">
@@ -14,13 +27,12 @@
 </a>
 
 <h1 class="text-3xl font-semibold mt-6">
-Dynamic Mode Decomposition
+Aeroelasticity
 </h1>
 
 <p class="mt-6 leading-8">
-Dynamic Mode Decomposition (DMD) approximates a linear operator
-that advances snapshot data in time and provides a finite-dimensional
-approximation of Koopman spectral information.
+Aeroelasticity is a core subject in stability of flying vehicles. In this topic, we will review some basic aeroelastic system \\
+that couples strucutral dynamics and aeromechanics.
 </p>
 
 <div class="mt-10 space-y-4">
