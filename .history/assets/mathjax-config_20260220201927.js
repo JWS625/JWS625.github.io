@@ -33,8 +33,6 @@ window.MathJax = {
       vtY: "\\boldsymbol{\\Psi}",
 
       // bold roman
-      va: "\\mathbf{a}",
-      vb: "\\mathbf{b}",
       vc: "\\mathbf{c}",
       vg: "\\mathbf{g}",
       vv: "\\mathbf{v}",
