@@ -1,0 +1,41 @@
+window.MathJax = {
+tex: {
+    macros: {
+    argmin: ["\\operatorname*{arg\\,min}"],
+    argmax: ["\\operatorname*{arg\\,max}"],
+    vta: "\\boldsymbol{\\alpha}",
+    vtb: "\\boldsymbol{\\beta}",
+    vtf: "\\boldsymbol{\\phi}",
+    vtrf: "\\boldsymbol{\\varphi}",
+    vtg: "\\boldsymbol{\\gamma}",
+    vtx: "\\boldsymbol{\\xi}",
+    vty: "\\boldsymbol{\\psi}",
+    vtF: "\\boldsymbol{\\Phi}",
+    vtL: "\\boldsymbol{\\Lambda}",
+    vtO: "\\boldsymbol{\\Omega}",
+    vtS: "\\boldsymbol{\\Sigma}",
+    vtX: "\\boldsymbol{\\Xi}",
+    vtY: "\\boldsymbol{\\Psi}",
+    vc: "\\mathbf{c}",
+    vg: "\\mathbf{g}",
+    vv: "\\mathbf{v}",
+    vw: "\\mathbf{w}",
+    vx: "\\mathbf{x}",
+    vy: "\\mathbf{y}",
+    vB: "\\mathbf{B}",
+    vC: "\\mathbf{C}",
+    vF: "\\mathbf{F}",
+    vG: "\\mathbf{G}",
+    vI: "\\mathbf{I}",
+    vQ: "\\mathbf{Q}",
+    vX: "\\mathbf{X}",
+    vY: "\\mathbf{Y}",
+    vM: "\\mathbf{M}",
+    vU: "\\mathbf{U}",
+    vV: "\\mathbf{V}",
+    vZ: "\\mathbf{Z}",
+    R: "\\mathbb{R}",
+    C: "\\mathbb{C}"
+    }
+}
+};
