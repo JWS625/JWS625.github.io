@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Dynamic Mode Decomposition | Research Notes</title>
+<title>Backgrounds of Modal Analysis | Research Notes</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="./../../assets/mathjax-config.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
@@ -15,7 +15,6 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-
 <body class="bg-white text-slate-900">
 <div class="max-w-4xl mx-auto px-6 py-16">
 
@@ -24,39 +23,41 @@ window.MathJax = {
 </a>
 
 <h1 class="text-3xl font-semibold mt-6">
-2. Dynamic Mode Decomposition
+1. Backgrounds
 </h1>
 
-<p class="mt-6 leading-8">
-   Consider a state vector $\vz = [\vz_1, \vz_2, \dots, \vz_N]$
+<p class="mt-6 leading-8 text-slate-700">
+  Modal analysis of fluid flow  in<a href="#ref-taira2017modal" class="text-blue-600 align-super text-sm">[1]</a>,
 </p>
-
-<div class="bg-slate-50 p-4 rounded-xl mt-4">
-$$
-K = G^{-1} A
-$$
 </div>
 
-<p class="mt-6 leading-8">
-where $G$ and $A$ are empirical Gram matrices.
-</p>
-
-</div>
 <div class="mt-16 flex justify-between items-center text-sm">
 
   <div class="mt-16 pt-8 border-t border-slate-200">
   <div class="flex justify-between items-center max-w-2xl mx-auto text-sm">
-    <a href="01_background.html"
+    <a href="02_modal_analysis.html"
        class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-50">
        ← Previous
     </a>
 
-    <a href="03_Koopman_theory.html"
+    <a href="04_kdmd.html"
        class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-50">
        Next →
     </a>
   </div>
+  </div>
 </div>
-</div>
+
+<section class="mt-16 pt-8 border-t border-slate-200">
+  <h2 class="text-2xl font-semibold">References</h2>
+
+    <li id="#ref-taira2017modal">
+      Kunihiko Taira,
+      <em>Modal analysis of fluid flows: An overview</em>,
+      AIAAJ, 2017.
+    </li>
+  </ol>
+</section>
 </body>
+
 </html>
