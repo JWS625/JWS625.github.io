@@ -38,11 +38,18 @@
     <section class="pt-14 pb-12 relative overflow-hidden">
       <!-- Background figure -->
       <div class="absolute inset-0 z-0 pointer-events-none">
-        <img src="assets/torus.png"
-            alt=""
-            aria-hidden="true"
-            class="w-full h-full object-cover opacity-25 blur-[1px]" />
-        <div class="absolute inset-0 bg-gradient-to-b from-white/70 via-white/70 to-white"></div>
+        <img
+          src="assets/torus.png"
+          alt=""
+          aria-hidden="true"
+          class="absolute left-1/2 top-1/2 w-[140%] max-w-none -translate-x-1/2 -translate-y-1/2
+                opacity-50 blur-[0.5px]"
+        />
+        <!-- Readability overlay: tweak these numbers -->
+        <div class="absolute inset-0 bg-white/55 backdrop-blur-[1px]"></div>
+
+        <!-- Optional: soft fade at bottom into the page -->
+        <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white"></div>
       </div>
       
       <div class="relative z-10 grid md:grid-cols-[1.4fr_0.6fr] gap-10 items-start">
